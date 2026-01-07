@@ -3,13 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Clicker Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Clicker Game</h1>
-  <p>Clicks: <span id="count">0</span></p>
-  <button id="clickBtn">Click me!</button>
+  <h1>🔥 Clicker Game 🔥</h1>
+
+  <div class="counter">
+    <p>Clicks:</p>
+    <span id="count">0</span>
+  </div>
+
+  <button id="clickBtn">CLICK!</button>
+
+  <div class="shop">
+    <h2>🛒 Shop</h2>
+
+    <button id="autoClickerBtn">
+      Auto Clicker (+1/sec)<br>
+      Cost: <span id="autoCost">50</span>
+    </button>
+
+    <button id="multiplierBtn">
+      Multiplier (x2 clicks)<br>
+      Cost: <span id="multiCost">100</span>
+    </button>
+  </div>
 
   <script src="script.js"></script>
 </body>
